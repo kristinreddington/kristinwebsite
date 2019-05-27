@@ -1,4 +1,4 @@
-import { createStore } from "redux";
+import { createStore } from 'redux';
 
 const initialState = {
   posts: []
@@ -14,5 +14,5 @@ function rootReducer(state, action) {
 
 export default function configureStore(){
   const store = createStore(rootReducer, initialState);
-  return store; 
+  return store;
 }
