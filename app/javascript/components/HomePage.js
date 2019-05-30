@@ -17,7 +17,9 @@ class HomePage extends React.Component {
       <React.Fragment>
         Greeting: {this.props.greeting}
 
-        <button className="getPostsBtn" onClick={() => this.props.getPosts()}>Get Posts</button>
+        <button className="getPostsBtn" onClick={() => this.props.getPosts()}>Get Posts</button><br>
+        </br>
+        <ul> {postsList} </ul>
 
       </React.Fragment>
     );
