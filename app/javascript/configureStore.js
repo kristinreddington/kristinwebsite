@@ -1,18 +1,29 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from "redux";
 
-const initialState = {
-  posts: []
+import thunk from 'redux-thunk';
+
+import rootReducer from "./reducers";
+
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+const initialState = { 
+  posts: [
+    {
+      name: "test",
+      guid: "123"
+    }
+  ] 
 };
 
-function rootReducer(state, action) {
-  console.log(action.type);
-  switch(action.type) {
-    default:
-    return state;
-  }
-}
-
-export default function configureStore(){
-  const store = createStore(rootReducer, initialState);
+export default function configureStore() {
+  const store = createStore(
+    rootReducer,
+    initialState,
+    composeWithDevTools(
+      applyMiddleware(
+        thunk,
+      )
+    )
+  );
   return store;
-}
+}; 

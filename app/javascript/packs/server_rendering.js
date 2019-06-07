@@ -1,5 +1,8 @@
-// By default, this pack is loaded for server-side rendering.
-// It must expose react_ujs as `ReactRailsUJS` and prepare a require context.
-var componentRequireContext = require.context("components", true);
-var ReactRailsUJS = require("react_ujs");
-ReactRailsUJS.useContext(componentRequireContext);
+// import ReactRailsUJS from 'react_ujs'
+console.log('Hello World from Webpacker')
+// Support component names relative to this directory:
+var componentRequireContext = require.context("components", true)
+var ReactRailsUJS = require("react_ujs")
+ReactRailsUJS.useContext(componentRequireContext)
+
+import 'semantic-ui-css/semantic.min.css';

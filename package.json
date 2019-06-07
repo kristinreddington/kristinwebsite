@@ -4,9 +4,9 @@
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
     "@rails/webpacker": "^4.0.2",
+    "@types/react-dom": "^16.8.4",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babel-polyfill": "^6.26.0",
-    "install": "^0.12.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -14,10 +14,20 @@
     "react-router-dom": "^5.0.0",
     "react_ujs": "^2.5.0",
     "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "yarn": "^1.16.0"
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.1",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.4.1"
+    "@types/react": "^16.8.19",
+    "@types/react-redux": "^7.0.9",
+    "@types/react-router-dom": "^4.3.3",
+    "install": "^0.12.2",
+    "redux-devtools-extension": "^2.13.8",
+    "webpack-dev-server": "^3.4.1",
+    "yarn": "^1.16.0"
   }
 }

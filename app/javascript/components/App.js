@@ -1,11 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Provider } from 'react-redux';
+import React from "react"
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import HomePage from './HomePage';
-import configureStore from '../configureStore';
+import { Provider } from 'react-redux'
 
+import HomePage from './HomePage'
+
+import configureStore from '../configureStore'
 const store = configureStore();
 
 class App extends React.Component {
