@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"; 
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -39,3 +39,4 @@ const structuredSelector = createStructuredSelector({
 const mapDispatchToProps = { getPosts };
 
 export default connect(structuredSelector, mapDispatchToProps)(Blog);
+
