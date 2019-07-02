@@ -7,18 +7,27 @@ import Contact from './Contact';
 import HomePage from './HomePage'; 
 import Services from './Services'; 
 
+import './Nav.css';
+
 class Nav extends Component {
   render() {
 
     return (
 
     <Router>
-      <div>
-        <NavLink className="navbar-brand" to='/'>K.N.R</NavLink>
-        <NavLink id="about" className="navbar-nav" to='/about'>About</NavLink> 
-        <NavLink id="blog" className="navbar-nav" to='/blog'>Blog</NavLink>
-        <NavLink id="services" className="navbar-nav" to='/services'>Services</NavLink>
-        <NavLink id="contact" className="navbar-nav" to='/contact'>Contact</NavLink> 
+      <div className="container">
+      <div className="logocontainer">
+          <NavLink id="logo"  to='/'>K.N.R</NavLink>
+      </div>
+      
+      <div className="Nav">
+        <ul id="main-menu" className= "menu">
+          <li><NavLink id="about" className="menu" to='/about'>About</NavLink></li>
+       
+          <li><NavLink id="services" className="menu" to='/services'>Services</NavLink></li>
+          <li><NavLink id="contact" className="menu" to='/contact'>Contact</NavLink></li> 
+          <li><NavLink id="blog" className="menu" to='/blog'>Blog</NavLink></li>
+        </ul>
         
         <Route exact path='/' component={HomePage} />
         <Route path='/about' component={About} />
@@ -26,6 +35,7 @@ class Nav extends Component {
         <Route exact path='/services' component={Services} />
         <Route  path='/contact' component={Contact} />
       </div>
+      </div> 
     </Router>
     )}
 }

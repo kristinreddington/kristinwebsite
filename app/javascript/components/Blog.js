@@ -23,7 +23,7 @@ class Blog extends React.Component {
 
     return (
       <React.Fragment>
-        Greeting: {this.props.greeting}
+        Greeting: Welcome to my blog! 
         <button className="getPostsBtn" onClick={() => this.props.getPosts()}>get posts</button>
         <br />
         <List divided relaxed>{ postsList }</List>

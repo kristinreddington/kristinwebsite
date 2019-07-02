@@ -1,0 +1,26 @@
+ 
+ 
+ .menu {
+        display: inline-block;
+        color: #999999;
+         margin-left: 6em; 
+        text-align: -webkit-match-parent;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+        text-decoration: none; 
+        list-style: none; 
+    }
+    
+    .menu :hover {
+        color: #999999; 
+    }
+    
+    .logocontainer {
+        text-align: center; 
+    }
+
+    #logo { 
+         text-align: center; 
+         display: inline-block;
+         margin-top: 10em; 
+         color: #999999;
+    }
