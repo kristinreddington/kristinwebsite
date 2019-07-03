@@ -18,6 +18,7 @@ class Nav extends Component {
       <div className="container">
       <div className="logocontainer">
           <NavLink id="logo"  to='/'>K.N.R</NavLink>
+          {/* <hr style={{border: '1px' }}></hr> */}
       </div>
       
       <div className="Nav">
