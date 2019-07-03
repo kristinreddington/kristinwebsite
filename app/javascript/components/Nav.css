@@ -29,5 +29,6 @@
          text-align: center; 
          display: inline-block;
          margin-top: 10em; 
-         color: #999999;
+         color: #999999; 
+         letter-spacing: 7px;  
     }
