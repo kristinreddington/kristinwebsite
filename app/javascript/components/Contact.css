@@ -1,0 +1,16 @@
+#contact-block {
+    text-align: center;
+}
+
+#contact {
+    display: inline-block;
+    color: #ffffff; 
+    font-family: 'akzidenz-grotesk_bqregular', Helvetica, Arial, sans-serif;
+    font-weight: lighter; 
+    font-size: 14px; 
+     
+}
+
+#disclaimer {
+    font-size: 11px; 
+}
