@@ -8,10 +8,17 @@
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
         text-decoration: none; 
         list-style: none; 
+        font-size: 14px; 
+        font-family: 'akzidenz-grotesk_bqregular', Helvetica, Arial, sans-serif;
+        font-weight: lighter; 
     }
     
     .menu :hover {
         color: #999999; 
+    }
+
+    .menu .active {
+        color: white; 
     }
     
     .logocontainer {

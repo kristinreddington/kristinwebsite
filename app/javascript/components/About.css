@@ -1,0 +1,12 @@
+#about-block {
+    text-align: center;
+}
+
+#about {
+    display: inline-block;
+    color: #ffffff; 
+    font-family: 'akzidenz-grotesk_bqregular', Helvetica, Arial, sans-serif;
+    font-weight: lighter; 
+    font-size: 14px;
+     
+}
